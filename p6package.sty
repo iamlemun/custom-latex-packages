@@ -1,0 +1,32 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{p6package}[2020/11/20]
+
+\RequirePackage{amsmath, amssymb, siunitx, mathtools}
+%units
+\newcommand{\force}[1]{\SI{#1}{\newton}}
+\newcommand{\seconds}[1]{\SI{#1}{\second}}
+\newcommand{\dist}[1]{\SI{#1}{\meter}}
+\newcommand{\area}[1]{\SI{#1}{\meter^2}}
+\newcommand{\mass}[1]{\SI{#1}{\kilogram}}
+\newcommand{\speed}[1]{\SI{#1}{\meter/\second}}
+\newcommand{\accel}[1]{\SI{#1}{\meter/\second^2}}
+\newcommand{\energy}[1]{\SI{#1}{\joule}}
+\newcommand{\power}[1]{\SI{#1}{\watt}}
+\newcommand{\moment}[1]{\SI{#1}{\kilogram \cdot \meter/\second}}
+\newcommand{\charge}[1]{\SI{#1}{\coulomb}}
+\newcommand{\field}[1]{\SI{#1}{\newton/\coulomb}}
+\newcommand{\voltage}[1]{\SI{#1}{\volt}}
+\newcommand{\capac}[1]{\SI{#1}{\farad}}
+\newcommand{\resistance}[1]{\SI{#1}{\ohm}}
+\newcommand{\current}[1]{\SI{#1}{\ampere}}
+\newcommand{\curdens}[1]{\SI{#1}{\ampere/\meter^2}}
+\newcommand{\resistivity}[1]{\SI{#1}{\ohm \cdot \meter}}
+\newcommand{\temp}[1]{\SI{#1}{\celsius}}
+\newcommand{\tempcoeff}[1]{\SI{#1}{/\celsius}}
+
+%constants
+\newcommand{\grav}{\SI{9.8}{\meter/\second^2}}
+\newcommand{\Coulomb}{\SI{9.0e9}{\newton \meter^2/\coulomb^2}}
+\newcommand{\echarge}{\SI{1.60e-19}{\coulomb}}
+\newcommand{\perm}{\SI{8.854e-12}{\farad/\meter}}
+\newcommand{\Avogadro}{\SI{6.02e23}{\text{electrons}/\mole}}
